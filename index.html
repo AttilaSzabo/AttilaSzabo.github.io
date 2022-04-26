@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,8 +16,8 @@
         <div class="portfolio">Portfó<span>lio</span></div>
         <nav class="nav-link">
             <ul class="nav-list">
-                <li class="nav-items"><a href="#">Rólam</a></li>
-                <li class="nav-items"><a href="#">Képességeim</a></li>
+                <li class="nav-items"><a href="#rolam">Rólam</a></li>
+                <li class="nav-items"><a href="#kepesseg">Képességeim</a></li>
                 <li class="nav-items"><a href="#">Önéletrajz</a></li>
                 <li class="nav-items"><a href="#">Kapcsolatok</a></li>
             </ul>
@@ -26,12 +27,69 @@
 <!-- Ez a főoldal -->
 
 <main>
+
     <section class="box">
         <h1>Szia, a nevem</h1>
         <h2>Szabó <span>Attila</span></h2>
         <p>- Front-end és web developer vagyok -</p>
         <a href="#">Kapcsolat felvétel</a>
     </section>
+
+<!-- Ez a rólam rész -->   
+
+    <section class="rolam">
+        <div class="text" id="rolam">
+            <h2>- Rövid bemutatkozás -</h2>
+        </div>
+        <div class="container-box">
+          <div class="container-rolam container-kep">
+              <img src="./image/kep.jpg" alt="">
+          </div>
+          <div class="container-rolam container-magamrol">
+              <h3>Sziasztok!</h3>
+              <p>Front-end és web developer vagyok.
+                Képességeimet önerőből, és egy 12 hónapig tartó Boot Camp-es oktatáson szereztem,
+                projekt alapokon. Vannak kész referenciáim, azt megnézve megbizonyosodhatsz a képességeimről.
+                Próbálom a legújjabb trendeket követni, alkalmazni a weboldalak építéséhez, hogy 
+                azok kitűnkjenek a  már megszokott trendektől.
+              </p>
+              <div class="media">
+                  <a href="https://www.linkedin.com/in/attila-szabo-747629182/" class="fa fa-linkedin"></a>
+                  <a href="https://www.upwork.com/freelancers/~011da606a97d152e34">Upwork</a>
+                  <a href="https://github.com/AttilaSzabo" class="fa fa-github"></a>
+              </div>
+          </div>
+        </div>
+    </section>
+
+<!-- Ez a képességeim rész -->  
+
+<section class="skills" id="kepesseg">
+    <div class="kepesseg-szoveg">
+        <div class="kepesseg">
+          <h2>- Képességeim -</h2>
+          <p>- Dolgok, amelyben jártas és szenvedélyes vagyok -</p>
+        </div>
+    </div>
+    <div class="kepesseg-hatter">
+        <div class="kepesseg-box">
+            <img src="./image/ez.png" alt="">
+            <h4>- Weboldal építés -</h4>
+            <p>Minden webhelyet két elsődleges céllal kell felépíteni: először is, minden eszközön működnie kell. Másodszor, a lehető leggyorsabbnak kell lennie.</p>
+        </div>
+        <div class="kepesseg-box1">
+            <img src="./image/ert.png" alt="">
+            <h4>- Kommunikáció -</h4>
+            <p>Kapcsolatfelvétel az ügyféllel. Megrendelések teljesítése, programcsoportok bevonása nagyobb projektbe.</p>
+        </div>
+        <div class="kepesseg-box2">
+            <img src="./image/preciz.png" alt="">
+            <h4>- Precizitás -</h4>
+            <p>Ügyfeleimmel együttműködök projektjeink specifikációinak tisztázásában, és szigorúan betartom a megállapodásainkat.</p>
+        </div>
+    </div>
+</section>
+
 </main>
 </body>
 </html>
