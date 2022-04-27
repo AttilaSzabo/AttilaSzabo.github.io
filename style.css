@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 14px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 ul,li,a{
@@ -13,6 +14,7 @@ ul,li,a{
 body{
     background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(./image/informatika.jpg);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -25,7 +27,7 @@ body{
 }
 
 .portfolio{
-    margin: 10px 0 0 30px;
+    margin: 20px 0 0 80px;
     font-size: 4rem;
     font-weight: 800;
 }
@@ -41,12 +43,11 @@ body{
 }
 
 .nav-items{
-    margin: 0 20px 0 0;
+    margin: 0 40px 0 0;
 }
 
 .nav-items a{
     color: white;
-    letter-spacing: 1px;
     font-size: 1.4rem;
     position: relative;
     text-shadow: 0 0 10px black;
@@ -75,60 +76,49 @@ body{
 /* Ez a főoldal */
 
 .box{
-    margin: 285px auto;
-    box-shadow: 0 0 10px white;
-    line-height: 1.5;
-    width: 800px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: rgba(0,0,0, 0.2);
+    margin: 200px 0 550px 80px;
+    line-height: 1.2;
 }
 
 .box h1{
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: rgba(255,255,255, 0.5);
-    letter-spacing: 1px;
     text-shadow: 2px 2px 10px black;
 }
 
 .box h2{
     font-size: 5rem;
     color: white;
-    letter-spacing: 1px;
     text-shadow: 2px 2px 10px black;
 }
 
 .box h2 span{
     font-size: 5rem;
     color: red;
-    letter-spacing: 1px;
     text-shadow: 2px 2px 10px black;
 }
 
 .box p{
-    font-size: 2.5rem;
-    letter-spacing: 1px;
+    font-size: 2rem;
     color: rgba(255,255,255, 0.5);
     text-shadow: 2px 2px 10px black;
+    margin-bottom: 30px;
 }
 
 .box a{
     color: burlywood;
-    font-size: 1.4rem;
-    margin-top: 20px;
+    padding: 5px 15px;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.548);
+    border-radius: 10px;
+    transition: 0.3s;
+    border: 2px solid red;
 }
 
 .box a:hover{
-    padding: 2px 5px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px burlywood;
-    background-color: burlywood;
-    color: black;
-    font-weight: 800;
+    color: red;
+    background: rgba(0,0,0,.2);
+    border-radius: 10px;
 }
 
 /* Ez a rólam rész */
@@ -143,8 +133,7 @@ body{
 .rolam{
     display: flex;
     flex-direction: column;
-    background-color: rgb(50,50,60);
-    border-top: 1px solid white;
+    background-color: #0A0A0A;
 }
 
 .container-box{
@@ -167,6 +156,7 @@ body{
 .container-rolam img{
     width: 400px;
     height: auto;
+    border-radius: 50%;
 }
 
 .container-rolam h3{
@@ -188,7 +178,7 @@ body{
 }
 
 .container-magamrol{
-    padding-right: 450px;
+    padding-right: 350px;
 }
 
 .media{
@@ -202,11 +192,15 @@ body{
     letter-spacing: 1px;
 }
 
+.media a:hover{
+    transform: scale(1.4);
+}
+
 /* Ez a képességeim rész */
 
 
 .skills{
-    border-top: 1px solid rgb(50,50,60);
+    padding-bottom: 250px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./image/inteligencia.jpg);
@@ -214,7 +208,7 @@ body{
 
 .kepesseg{
     text-align: center;
-    margin-top: 100px;
+    padding-top: 120px;
 }
 
 .kepesseg h2{
@@ -225,7 +219,7 @@ body{
 
 .kepesseg p{
     font-size: 2rem;
-    color: rgba(255,255,255,.5);
+    color: rgba(255,255,255);
     margin-top: 10px;
     text-shadow: 2px 2px 10px black;
 }
@@ -238,32 +232,40 @@ body{
 
 
 .kepesseg-box{
+    box-shadow: 0 0 10px white;
+    background-color: rgba(10, 10,30,.7);
+    border-radius: 10px;
     padding: 10px;
     width: 500px;
     height: 300px;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(./image/kepesseg.jpg);
+    /*background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0.5)), url(./image/kepesseg.jpg);*/
 }
 
 .kepesseg-box1{
+    box-shadow: 0 0 10px white;
+    background-color: rgba(10, 10,30,.7);
+    border-radius: 10px;
     padding: 10px;
     width: 500px;
     height: 300px;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(./image/kepesseg1.jpg);
+    /*background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./image/kepesseg1.jpg);*/
 }
 
 .kepesseg-box2{
+    box-shadow: 0 0 10px white;
+    background-color: rgba(10, 10,30,.7);
+    border-radius: 10px;
     padding: 10px;
     width: 500px;
     height: 300px;
     background-repeat: no-repeat;
     background-size: 100%;
     background-size: cover;
-    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)), url(./image/kepesseg2.jpg);
-    margin-bottom: 500px;
+    /*background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./image/kepesseg2.jpg);*/
 }
 
 .kepesseg-box h4,
@@ -271,6 +273,7 @@ body{
 .kepesseg-box2 h4{
     font-size: 2.3rem;
     color: burlywood;
+    text-shadow: 0 0 10px black;
     letter-spacing: 2px;
     margin-top: 20px;
 }
@@ -278,7 +281,8 @@ body{
 .kepesseg-box p,
 .kepesseg-box1 p,
 .kepesseg-box2 p{
-    color: rgba(255,255,255,.8);
+    color: rgba(255,255,255,0.5);
+    font-weight: 800;
     font-size: 1.4rem;
     letter-spacing: 1px;
     margin-top: 30px;
@@ -300,28 +304,213 @@ body{
     width: 80px;
 }
 
-.kepesseg-box:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: 0 0 20px white;
-    border-radius: 20px;
+/* Ez a %-os rész képességek */
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    background: #101010;
+    padding-bottom: 150px;
 }
 
-.kepesseg-box1:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: 0 0 20px burlywood;
-    border-radius: 20px;
+.skills-text{
+    text-align: center;
+    padding-top: 120px;
+    background-color: #101010;
 }
 
-.kepesseg-box2:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-    box-shadow: 0 0 20px burlywood;
-    border-radius: 20px;
+.skills-text h4{
+    font-size: 3.5rem;
+    color: burlywood;
 }
 
+.skills-text p{
+    font-size: 2.5rem;
+    color: white;
+}
 
+.kartya{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+}
 
+.kartya:hover{
+    transform: translatey(-10px);
+    box-shadow: 0 0 10px rgba(50,50,60);
+}
 
+.szazalek{
+    position: relative;
+    z-index: 1000;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 30px rgba(255,255,255,.5)
+}
 
+.szazalek .szam{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.szazalek .szam h2{
+    color: burlywood;
+    font-weight: 600;
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+.kartya:hover .szazalek .szam h2{
+    color: white;
+    font-size: 60px;
+}
+
+.szazalek .szam h2 span{
+    color: burlywood;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.kartya:hover .szazalek .szam h2 span{
+    color: white;
+}
+
+.szoveg{
+    position: relative;
+    color: rgba(255,255,255,.5);
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    margin-top: 30px;
+}
+
+.kartya:hover .szoveg{
+    color: white;
+}
+
+svg{
+position: relative;
+width: 150px;
+height: 150px;
+z-index: 1000;
+}
+
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: black;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+.kartya:nth-child(1) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
+    stroke: burlywood;
+}
+
+.kartya:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 40) / 100);
+    stroke: red;
+}
+
+.kartya:nth-child(3) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 3) / 100);
+    stroke: white;
+}
+
+.kartya:nth-child(4) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 3) / 100);
+    stroke: white;
+}
+
+.kartya:nth-child(5) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440 * 0) / 100);
+    stroke: white;
+}
+
+/* Ez a lábléc */
+
+.links h6{
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.lablec{
+    padding-top: 100px;
+    background-color:#101010;
+    border-top: 1px solid rgba(255, 255, 255, 0.479);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lablec-kialakitas{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.lablec-kialakitas label{
+    font-size: 1.2rem;
+    margin: 10px 0 10px 0;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+input{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+textarea{
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 800;}
+
+.submit{
+    background-color: burlywood;
+    width: 100px;
+    margin: 30px auto;
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+}
