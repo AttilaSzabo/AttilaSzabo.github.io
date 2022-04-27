@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500&display=swap');
+        </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
@@ -13,13 +16,13 @@
 <!-- Ez a navigációs rész -->
 
     <header class="header">
-        <div class="portfolio">Portfó<span>lio</span></div>
+        <div class="portfolio">Portfo<span>lio</span></div>
         <nav class="nav-link">
             <ul class="nav-list">
-                <li class="nav-items"><a href="#rolam">Rólam</a></li>
-                <li class="nav-items"><a href="#kepesseg">Képességeim</a></li>
-                <li class="nav-items"><a href="#">Önéletrajz</a></li>
-                <li class="nav-items"><a href="#">Kapcsolatok</a></li>
+                <li class="nav-items"><a href="#rolam">About my</a></li>
+                <li class="nav-items"><a href="#mierten">Why me</a></li>
+                <li class="nav-items"><a href="#kepesseg">Skills</a></li>
+                <li class="nav-items"><a href="#kontakt">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,29 +32,29 @@
 <main>
 
     <section class="box">
-        <h1>Szia, a nevem</h1>
+        <h1>Hy, my name is</h1>
         <h2>Szabó <span>Attila</span></h2>
-        <p>- Front-end és web developer vagyok -</p>
-        <a href="#">Kapcsolat felvétel</a>
+        <p>And I´m a freelancers</p>
+        <a href="#">My CV</a>
     </section>
 
 <!-- Ez a rólam rész -->   
 
     <section class="rolam">
         <div class="text" id="rolam">
-            <h2>- Rövid bemutatkozás -</h2>
+            <h2>- About me -</h2>
         </div>
         <div class="container-box">
           <div class="container-rolam container-kep">
               <img src="./image/kep.jpg" alt="">
           </div>
           <div class="container-rolam container-magamrol">
-              <h3>Sziasztok!</h3>
-              <p>Front-end és web developer vagyok.
-                Képességeimet önerőből, és egy 12 hónapig tartó Boot Camp-es oktatáson szereztem,
-                projekt alapokon. Vannak kész referenciáim, azt megnézve megbizonyosodhatsz a képességeimről.
-                Próbálom a legújjabb trendeket követni, alkalmazni a weboldalak építéséhez, hogy 
-                azok kitűnkjenek a  már megszokott trendektől.
+              <h3>Hi!</h3>
+              <p>I am a front-end and web developer.
+                I gained my skills on my own and on a 12-month Boot Camp education on a project basis. 
+                I have ready-made references, looking at it you can be sure of my abilities.
+                I try to follow the latest trends, apply to build websites to
+                they should stand out from the trends they are already accustomed to.
               </p>
               <div class="media">
                   <a href="https://www.linkedin.com/in/attila-szabo-747629182/" class="fa fa-linkedin"></a>
@@ -64,32 +67,149 @@
 
 <!-- Ez a képességeim rész -->  
 
-<section class="skills" id="kepesseg">
+<section class="skills" id="mierten">
     <div class="kepesseg-szoveg">
         <div class="kepesseg">
-          <h2>- Képességeim -</h2>
-          <p>- Dolgok, amelyben jártas és szenvedélyes vagyok -</p>
+          <h2>Why me</h2>
+          <p>- Things I'm skilled at and passionate about. -</p>
         </div>
     </div>
     <div class="kepesseg-hatter">
         <div class="kepesseg-box">
             <img src="./image/ez.png" alt="">
-            <h4>- Weboldal építés -</h4>
-            <p>Minden webhelyet két elsődleges céllal kell felépíteni: először is, minden eszközön működnie kell. Másodszor, a lehető leggyorsabbnak kell lennie.</p>
+            <h4>- Web Development -</h4>
+            <p>Every website should be built with two primary goals: firstly, it needs to work across all devices. Secondly, it needs to be fast as posible.</p>
         </div>
         <div class="kepesseg-box1">
             <img src="./image/ert.png" alt="">
-            <h4>- Kommunikáció -</h4>
-            <p>Kapcsolatfelvétel az ügyféllel. Megrendelések teljesítése, programcsoportok bevonása nagyobb projektbe.</p>
+            <h4>- Communication -</h4>
+            <p>Contact with the customer. Execution of orders, involvement of program groups in larger project.</p>
         </div>
         <div class="kepesseg-box2">
             <img src="./image/preciz.png" alt="">
-            <h4>- Precizitás -</h4>
-            <p>Ügyfeleimmel együttműködök projektjeink specifikációinak tisztázásában, és szigorúan betartom a megállapodásainkat.</p>
+            <h4>- Precision -</h4>
+            <p>I collaborate whit my clients on clarifying the specification of our projects and I strictly follow our agreements.</p>
         </div>
     </div>
 </section>
 
+
+<!-- Ez a %-os rész képességek -->
+<section class="skill-boxs">
+    <div class="skills-text" id="kepesseg">
+        <h4>Skills</h4>
+        <p>- Frameworks it deals with. -</p>
+    </div>
+    
+<div class="container">
+    <div class="kartya">
+        <div class="kartya-box">
+            <div class="szazalek">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="szam">
+                    <h2>50<span>%</span>
+                    </h2>
+                </div>
+            </div>
+            <h2 class="szoveg">HTML 5</h2>
+        </div>
+    </div>
+
+    <div class="kartya">
+        <div class="kartya-box">
+            <div class="szazalek">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="szam">
+                    <h2>40<span>%</span>
+                    </h2>
+                </div>
+            </div>
+            <h2 class="szoveg">CSS 3</h2>
+        </div>
+    </div>
+
+    <div class="kartya">
+        <div class="kartya-box">
+            <div class="szazalek">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="szam">
+                    <h2>3<span>%</span>
+                    </h2>
+                </div>
+            </div>
+            <h2 class="szoveg">JavaScript</h2>
+        </div>
+    </div>
+
+    <div class="kartya">
+        <div class="kartya-box">
+            <div class="szazalek">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="szam">
+                    <h2>3<span>%</span>
+                    </h2>
+                </div>
+            </div>
+            <h2 class="szoveg">Python</h2>
+        </div>
+    </div>
+
+    <div class="kartya">
+        <div class="kartya-box">
+            <div class="szazalek">
+                <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                </svg>
+                <div class="szam">
+                    <h2>0<span>%</span>
+                    </h2>
+                </div>
+            </div>
+            <h2 class="szoveg">WordPress</h2>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Ez a lábléc  -->
+
+<footer class="lablec" id="kontakt">
+
+<section class="links">
+    <h6>Links</h6>
+    <nav class="nav-link">
+        <ul class="nav-list">
+            <li class="nav-items"><a href="#rolam">About my</a></li>
+            <li class="nav-items"><a href="#mierten">Why me</a></li>
+            <li class="nav-items"><a href="#kepesseg">Skills</a></li>
+            <li class="nav-items"><a href="#kontakt">Contact</a></li>
+        </ul>
+    </nav>
+</section>
+
+<form class="lablec-kialakitas" action="https://formspree.io/f/xlezonor" method="post">
+<label>Name</label>
+<input type="text" placeholder="Name:" required>
+<label>E-mail</label>
+<input type="email" placeholder="E-mail:" required>
+<label>Text</label>
+<textarea name="Text" placeholder="Text:" id="" cols="30" rows="10"></textarea>
+<input class="submit" class="submit" type="submit" value="submit" placeholder="Text:">
+</form>
+</footer>
 </main>
 </body>
 </html>
