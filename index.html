@@ -13,43 +13,80 @@
 </head>
 <body>
 
+
+
+
 <!-- Ez a navigációs rész -->
+
+
+
 
     <header class="header">
         <div class="portfolio">Portfo<span>lio</span></div>
-        <nav class="nav-link">
-            <ul class="nav-list">
-                <li class="nav-items"><a href="#rolam">About my</a></li>
-                <li class="nav-items"><a href="#mierten">Why me</a></li>
-                <li class="nav-items"><a href="#kepesseg">Skills</a></li>
-                <li class="nav-items"><a href="#kontakt">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container1">
+            <nav class="navbar">
+                <div class="hamburger-menu">
+                    <div class="line line-1 "></div>
+                    <div class="line line-2 "></div>
+                    <div class="line line-3 "></div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item" >
+                        <a href="#" class="nav-link" >Home</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="#rolam" class="nav-link" >About me</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="#mierten" class="nav-link" >Why me</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a href="#kontakt" class="nav-link" >Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+       
     </header>
 
+
+
+
 <!-- Ez a főoldal -->
+
+
+
 
 <main>
 
     <section class="box">
         <h1>Hi, my name is</h1>
-        <h2>Szabó <span>Attila</span></h2>
-        <p>And I´m a freelancers</p>
-        <a href="#">My CV</a>
+        <h4>Szabó <span>Attila</span></h4>
+        <h1>And I´m a freelancers</h1>
+        <div class="cv">
+          <a href="#">CV</a>
+        </div>
     </section>
 
-<!-- Ez a rólam rész -->   
+
+
+
+        <!-- Ez a rólam rész -->   
+
+
+
 
     <section class="rolam">
         <div class="text" id="rolam">
             <h2>- About me -</h2>
         </div>
         <div class="container-box">
-          <div class="container-rolam container-kep">
+          <div class="container-kep">
               <img src="./image/kep.jpg" alt="">
           </div>
-          <div class="container-rolam container-magamrol">
-              <h3>Hi!</h3>
+          <div class="container-magamrol">
+              <h3>Hello!</h3>
               <p>I am a front-end and web developer.
                 I gained my skills on my own and on a 12-month Boot Camp education on a project basis. 
                 I have ready-made references, looking at it you can be sure of my abilities.
@@ -65,27 +102,31 @@
         </div>
     </section>
 
-<!-- Ez a képességeim rész -->  
 
-<section class="skills" id="mierten">
-    <div class="kepesseg-szoveg">
-        <div class="kepesseg">
+
+
+<!-- Ez a miért én -->  
+
+
+
+
+<section class="why-me" id="mierten">
+    <div class="kepesseg">
           <h2>Why me</h2>
           <p>- Things I'm skilled at and passionate about. -</p>
-        </div>
     </div>
-    <div class="kepesseg-hatter">
-        <div class="kepesseg-box">
+    <div class="kepesseg-container">
+        <div class="kepesseg-box doboz">
             <img src="./image/ez.png" alt="">
             <h4>- Web Development -</h4>
             <p>Every website should be built with two primary goals: firstly, it needs to work across all devices. Secondly, it needs to be fast as posible.</p>
         </div>
-        <div class="kepesseg-box1">
+        <div class="kepesseg-box doboz1">
             <img src="./image/ert.png" alt="">
             <h4>- Communication -</h4>
             <p>Contact with the customer. Execution of orders, involvement of program groups in larger project.</p>
         </div>
-        <div class="kepesseg-box2">
+        <div class="kepesseg-box doboz2">
             <img src="./image/preciz.png" alt="">
             <h4>- Precision -</h4>
             <p>I collaborate whit my clients on clarifying the specification of our projects and I strictly follow our agreements.</p>
@@ -94,7 +135,13 @@
 </section>
 
 
+
+
 <!-- Ez a %-os rész képességek -->
+
+
+
+
 <section class="skill-boxs">
     <div class="skills-text" id="kepesseg">
         <h4>Skills</h4>
@@ -102,9 +149,9 @@
     </div>
     
 <div class="container">
-    <div class="kartya">
+    <div class="kartya card">
         <div class="kartya-box">
-            <div class="szazalek">
+            <div class="szazalek ">
                 <svg>
                     <circle cx="70" cy="70" r="70"></circle>
                     <circle cx="70" cy="70" r="70"></circle>
@@ -118,7 +165,7 @@
         </div>
     </div>
 
-    <div class="kartya">
+    <div class="kartya card1">
         <div class="kartya-box">
             <div class="szazalek">
                 <svg>
@@ -134,7 +181,7 @@
         </div>
     </div>
 
-    <div class="kartya">
+    <div class="kartya card2">
         <div class="kartya-box">
             <div class="szazalek">
                 <svg>
@@ -150,7 +197,7 @@
         </div>
     </div>
 
-    <div class="kartya">
+    <div class="kartya card3">
         <div class="kartya-box">
             <div class="szazalek">
                 <svg>
@@ -166,7 +213,7 @@
         </div>
     </div>
 
-    <div class="kartya">
+    <div class="kartya card4">
         <div class="kartya-box">
             <div class="szazalek">
                 <svg>
@@ -184,32 +231,44 @@
 </div>
 </section>
 
+
+
+
 <!-- Ez a lábléc  -->
 
-<footer class="lablec" id="kontakt">
 
-<section class="links">
-    <h6>Links</h6>
-    <nav class="nav-link">
-        <ul class="nav-list">
-            <li class="nav-items"><a href="#rolam">About my</a></li>
-            <li class="nav-items"><a href="#mierten">Why me</a></li>
-            <li class="nav-items"><a href="#kepesseg">Skills</a></li>
-            <li class="nav-items"><a href="#kontakt">Contact</a></li>
+
+
+<footer class="kontakt" id="kontakt">
+    <section class="links">
+        <h4>Links</h4>
+        <ul class="footer-link">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Why me</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
-</section>
+    </section>
+    <section class="kerdes">
+        <h4>Have a question?</h4>
+        <div class="elerhetoseg">
+            <i class="fa fa-phone" style="font-size:20px"></i>
 
-<form class="lablec-kialakitas" action="https://formspree.io/f/xlezonor" method="post">
-<label>Name</label>
-<input type="text" placeholder="Name:" required>
-<label>E-mail</label>
-<input type="email" placeholder="E-mail:" required>
-<label>Text</label>
-<textarea name="Text" placeholder="Text:" id="" cols="30" rows="10"></textarea>
-<input class="submit" class="submit" type="submit" value="submit" placeholder="Text:">
-</form>
+            <p>+421 911 297 305</p>
+        </div>
+        <div class="elerhetoseg">
+            <i class="fa fa-home" style="font-size:20px"></i>
+            <p>Vozokany 379/17 Slovakia</p>
+        </div>
+        <div class="elerhetoseg">
+            <i class="fa fa-envelope-o" style="font-size:20px"></i>
+            <p>tailorstile@gmail.com</p>
+        </div>
+    </section>
 </footer>
 </main>
+
+
+<script src="script.js"></script>
 </body>
 </html>
