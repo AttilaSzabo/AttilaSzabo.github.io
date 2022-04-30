@@ -18,320 +18,367 @@ body{
     color: white;
 }
 
+
+
+
 /* Ez a navigációs rész */
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
+
 
 .portfolio{
-    margin: 20px 0 0 80px;
-    font-size: 4rem;
+    margin: 1rem;
+    font-size: 2rem;
     font-weight: 800;
 }
 
 .portfolio span{
-    font-size: 3.5rem;
+    font-size: 2rem;
     color: red;
     font-weight: 800;
 }
 
-.nav-list{
-    display: flex;
-}
-
-.nav-items{
-    margin: 0 40px 0 0;
-}
-
-.nav-items a{
-    color: white;
-    font-size: 1.4rem;
-    position: relative;
-    text-shadow: 0 0 10px black;
-}
-
-.nav-items a:after{
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    content: "";
-    width: 0;
-    height: 2px;
-    background-color: red;
-    transition: 0.3s;
-}
-
-.nav-items a:hover:after{
-    width: 100%;
-}
-
-.nav-items a:hover{
-    color: burlywood;
-    text-shadow: 0 0 5px black;
-}
-
-/* Ez a főoldal */
-
-.box{
-    margin: 200px 0 550px 80px;
-    line-height: 1.2;
-}
-
-.box h1{
-    font-size: 2rem;
-    color: rgba(255,255,255, 0.5);
-    text-shadow: 2px 2px 10px black;
-}
-
-.box h2{
-    font-size: 5rem;
-    color: white;
-    text-shadow: 2px 2px 10px black;
-}
-
-.box h2 span{
-    font-size: 5rem;
-    color: red;
-    text-shadow: 2px 2px 10px black;
-}
-
-.box p{
-    font-size: 2rem;
-    color: rgba(255,255,255, 0.5);
-    text-shadow: 2px 2px 10px black;
-    margin-bottom: 30px;
-}
-
-.box a{
-    color: burlywood;
-    padding: 5px 15px;
-    font-size: 2rem;
-    background: rgba(0, 0, 0, 0.548);
-    border-radius: 10px;
-    transition: 0.3s;
-    border: 2px solid red;
-}
-
-.box a:hover{
-    color: red;
-    background: rgba(0,0,0,.2);
-    border-radius: 10px;
-}
-
-/* Ez a rólam rész */
-
-.text h2{
-    text-align: center;
-    font-size: 3.5rem;
-    color: burlywood;
-    margin-top: 100px;
-}
-
-.rolam{
+.hamburger-menu{
+    border-radius: 2px;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    background-color: #0A0A0A;
-}
-
-.container-box{
-    margin: 120px 0 250px 0;
-    display: flex;
     justify-content: space-around;
 }
 
-.container-rolam{
-    margin: 5px;
-    width: 50%;
-    padding: 20px;
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: chocolate;
+    border-radius: 10px;
+    transition: all 1s;
 }
 
-.container-kep{
+.navbar{
+    position: relative;
+    z-index: 500;
+    width: 300px;
+    height: 395px;
+    position: fixed;
+    top: 5px;
+    right: -300px;
+    background-color: #222;
     display: flex;
     justify-content: center;
-    border-right: 3px solid white;
-}
-.container-rolam img{
-    width: 400px;
-    height: auto;
-    border-radius: 50%;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    transition: right 1s cubic-bezier(1, 0, 0, 1);
 }
 
-.container-rolam h3{
-    font-size: 2rem;
-    letter-spacing: 2px;
-    display: inline-block;
-    color: red;
-    text-shadow: 2px 2px 10px black;
+.change{
+    right: 0;
 }
 
-.container-rolam p{
-    margin-top: 30px;
-    line-height: 1.4;
+.change .line-1{
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
+
+.change .line-2{
+opacity: 0;
+}
+
+.change .line-3{
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
+
+.nav-list{
+    text-align: right;
+}
+
+.nav-item{
+    margin: 25px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 300;
     letter-spacing: 1px;
-    font-size: 1.4rem;
-    color: rgba(255,255,255,.5);
-    font-weight: 800;
-    text-shadow: 2px 2px 10px black;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 0;
 }
 
-.container-magamrol{
-    padding-right: 350px;
+.nav-link::before,
+.nav-link::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    transform: scalex(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after{
+    bottom: 0;
+    transform-origin: left;
+}
+
+.nav-link::before{
+    top: 0;
+    transform-origin: right;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after{
+    transform: scalex(1);
+}
+
+
+
+/* Ez a főoldal */
+
+
+
+
+.box{
+    margin: 80px 0 100px 20px;
+}
+
+.box h1{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.box h4{
+    font-size: 2.4rem;
+}
+
+.box h4 span{
+    font-size: 2.4rem;
+    color: red;
+}
+
+.cv{
+    margin: 30px 0;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.cv a {
+    color: burlywood;
+    font-weight: 700;
+    font-size: 1.2rem;
+    background-color: #0A0A0A;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cv a:hover{
+    color: burlywood;
+    box-shadow: 0 0 5px white;
+
+}
+
+.cv:hover{
+    transform:translatey(-5px);
+}
+
+
+
+
+/* Ez a rólam rész */
+
+
+
+
+.text h2{
+    text-align: center;
+    font-size: 2.5rem;
+    color: chocolate;
+}
+
+.rolam{
+    background-color: #0A0A0A;
+    padding: 20px 0 0 0;
+}
+
+.container-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container-kep img{
+    margin: 20px 0 30px 0;
+    width: 200px;
+    border-radius: 30% 10%;
+}
+
+.container-magamrol h3{
+    border-top: 1px solid white;
+    padding-top: 25px;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container-magamrol p{
+    margin: 25px auto auto auto;
+    width: 280px;
+    color: rgba(255,255,255,.7);
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black;
 }
 
 .media{
-    margin-top: 80px;
+    margin: 25px auto;
+    transition: 0.2s;
+}
+
+.media:hover{
+    transform: translatey(-5px);
+    color: burlywood;
+    display: inline-block;
+    border-bottom: 1px solid burlywood;
+}
+
+.upwork{
+    transition: 0.3s;
+}
+
+.upwork:hover{
+    transform: translatey(-5px);
 }
 
 .media a{
-    margin: 0 5px;
-    color: white;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 800;
+    transition: 0.2s;
 }
 
 .media a:hover{
-    transform: scale(1.4);
+    transform: translatey(-5px);
+    color: burlywood;
+    border-bottom: 1px solid burlywood;
 }
 
-/* Ez a képességeim rész */
 
 
-.skills{
-    padding-bottom: 250px;
-    background-repeat: no-repeat;
+
+/*Ez a miért én*/
+
+
+
+
+.why-me{
+    background-size: cover;
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./image/inteligencia.jpg);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0.2),rgba(0,0,0,.2)), url(./image/inteligencia.jpg);
 }
 
 .kepesseg{
     text-align: center;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .kepesseg h2{
-    font-size: 3.5rem;
-    color: burlywood;
-    text-shadow: 2px 2px 10px black;
+    font-size: 2.5rem;
+    color: chocolate;
+    padding-bottom: 10px;
+    text-shadow: 0 0 5px black;
 }
 
 .kepesseg p{
-    font-size: 2rem;
-    color: rgba(255,255,255);
-    margin-top: 10px;
-    text-shadow: 2px 2px 10px black;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-bottom: 20px;
+
 }
 
-.kepesseg-hatter{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 120px;
-}
-
-
-.kepesseg-box{
-    box-shadow: 0 0 10px white;
-    background-color: rgba(10, 10,30,.7);
-    border-radius: 10px;
-    padding: 10px;
-    width: 500px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /*background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0.5)), url(./image/kepesseg.jpg);*/
-}
-
-.kepesseg-box1{
-    box-shadow: 0 0 10px white;
-    background-color: rgba(10, 10,30,.7);
-    border-radius: 10px;
-    padding: 10px;
-    width: 500px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    /*background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./image/kepesseg1.jpg);*/
-}
-
-.kepesseg-box2{
-    box-shadow: 0 0 10px white;
-    background-color: rgba(10, 10,30,.7);
-    border-radius: 10px;
-    padding: 10px;
-    width: 500px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-size: cover;
-    /*background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(./image/kepesseg2.jpg);*/
-}
-
-.kepesseg-box h4,
-.kepesseg-box1 h4,
-.kepesseg-box2 h4{
-    font-size: 2.3rem;
-    color: burlywood;
-    text-shadow: 0 0 10px black;
-    letter-spacing: 2px;
-    margin-top: 20px;
-}
-
-.kepesseg-box p,
-.kepesseg-box1 p,
-.kepesseg-box2 p{
-    color: rgba(255,255,255,0.5);
-    font-weight: 800;
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    margin-top: 30px;
-}
-
-.kepesseg-box,
-.kepesseg-box1,
-.kepesseg-box2{
-    text-align: center;
+.kepesseg-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    padding-bottom: 100px;
 }
 
-.kepesseg-box img,
-.kepesseg-box1 img,
-.kepesseg-box2 img{
-    width: 80px;
+.kepesseg-box{
+    padding: 10px;
+    text-align: center;
+    width: 280px;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 5px;
+    background-color: rgba(30,30,20);
+    box-shadow: inset 0 0 10px white;
 }
+
+.kepesseg-box img{
+    height: 50px;
+}
+
+.kepesseg-box h4{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.kepesseg-box p{
+    color: rgba(255,255,255,.5);
+    font-weight: 800;
+}
+
+
+
 
 /* Ez a %-os rész képességek */
 
-.container{
-    display: flex;
-    justify-content: space-evenly;
-    background: #101010;
-    padding-bottom: 150px;
-}
+
+
 
 .skills-text{
     text-align: center;
-    padding-top: 120px;
+    padding-top: 20px;
     background-color: #101010;
 }
 
 .skills-text h4{
-    font-size: 3.5rem;
-    color: burlywood;
+    font-size: 2.5rem;
+    color: chocolate;
+    padding-bottom: 10px;
 }
 
 .skills-text p{
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
     color: white;
+    padding-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #101010;
+    padding-bottom: 25px;
 }
 
 .kartya{
-    margin-top: 120px;
     display: flex;
+    margin-top: 20px;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -346,12 +393,12 @@ body{
 
 .kartya:hover{
     transform: translatey(-10px);
-    box-shadow: 0 0 10px rgba(50,50,60);
+    box-shadow: 0 0 10px rgba(255,255,60,.5);
 }
 
 .szazalek{
     position: relative;
-    z-index: 1000;
+    z-index: 200;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -411,7 +458,7 @@ svg{
 position: relative;
 width: 150px;
 height: 150px;
-z-index: 1000;
+z-index: 200;
 }
 
 svg circle{
@@ -454,7 +501,13 @@ svg circle:nth-child(2){
     stroke: white;
 }
 
+
+
+
 /* Ez a lábléc */
+
+
+
 
 .links h6{
     margin-bottom: 40px;
@@ -513,4 +566,285 @@ textarea{
     cursor: pointer;
     color: black;
     font-weight: 600;
+}
+
+
+
+/*Ez a lábléc*/
+
+
+
+.kontakt{
+    padding-top: 20px;
+    background-color: #101010;
+    border-top: 1px solid rgba(255, 255, 255, 0.589);
+}
+
+.links{
+    text-align: center;
+}
+
+.links h4{
+    font-size: 1.2rem;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+}
+
+.footer-link{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-link a{
+    transition: 0.3s;
+    font-weight: 500;
+    color: burlywood;
+}
+
+.footer-link li{
+    transition: 0.3s;
+}
+
+.footer-link li:hover,
+.footer-link a:hover{
+    color: red;
+    transform: translatex(-3px);
+}
+
+.kerdes{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.kerdes h4{
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+}
+
+.elerhetoseg{
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    color: rgba(255,255,255,.5);
+}
+
+.elerhetoseg p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-left: 10px;
+
+}
+
+
+
+@media screen and (min-width:676px){
+
+    .box{
+        margin: 80px 0 400px 20px;
+    }
+
+    .box h1{
+        font-weight: 200;
+        font-size: 2rem;
+    }
+    .box h4,
+    .box h4 span{
+        font-size: 3.2rem;
+    }
+
+    .portfolio,
+    .portfolio span{
+        font-size: 2.4rem;
+    }
+
+    .text h2{
+        font-size: 3rem;
+    }
+
+    .container-kep img{
+        width: 250px;
+    }
+
+    .container-magamrol h3,
+    .kepesseg h2,
+    .skills-text h4{
+        font-size: 3rem;
+    }
+    
+    .container-magamrol p{
+        width: 360px;
+        font-size: 1.2rem;
+    }
+    
+    .kepesseg p{
+        font-size: 1.5rem;
+    }
+    
+    .kepesseg-box{
+        padding: 20px;
+        width: 400px;
+        height: 280px;
+    }
+    
+    .kepesseg-box p{
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+
+    .skills-text p{
+        font-size: 1.5rem;
+    }
+
+    .kontakt{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footer-link{
+        flex-direction: column;
+    }
+
+    .footer-link a{
+        font-size: 1.1rem;
+    }
+
+    .footer-link li{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:994px){
+
+    .box{
+        margin: 80px 0 600px 100px;
+    }
+
+    .box h1{
+        font-weight: 200;
+        font-size: 2.5rem;
+    }
+
+    .box h4,
+    .box h4 span{
+        font-size: 5rem;
+    }
+
+    .portfolio,
+    .portfolio span{
+        font-size: 2.9rem;
+    }
+
+    .text h2{
+        font-size: 3.5rem;
+    }
+
+    .container-kep img{
+        width: 350px;
+    }
+
+    .container-magamrol h3{
+        border-top: none;
+    }
+
+    .container-magamrol{
+        border-left: 1px solid white;
+        padding-left: 20px;
+        margin-left: 180px;
+    }
+
+    .container-box{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .doboz{
+        grid-area: doboz;
+    }
+
+    .doboz1{
+        grid-area: doboz1;
+    }
+
+    .doboz2{
+        grid-area: doboz2;
+    }
+
+    .kepesseg-container{
+        display: grid;
+        grid-template-areas: 
+        "doboz doboz1"
+        "doboz2 doboz2"
+        ;
+    }
+
+    .card{
+        grid-area: card;
+    }
+
+    .card1{
+        grid-area: card1;
+    }
+
+    .card2{
+        grid-area: card2;
+    }
+
+    .card3{
+        grid-area: card3;
+    }
+
+    .card4{
+        grid-area: card4;
+    }
+
+    .container{
+        justify-content: space-evenly;
+        align-items: center;
+        display: grid;
+        grid-template-areas:
+        "card card1 card2"
+        "card3 card4 card4"
+        ;
+    }
+
+    .rolam{
+        padding: 80px 0 110px 0;
+    }
+}
+
+@media screen and (min-width:1400px){
+
+    .box{
+        margin: 80px 0 600px 100px;
+    }
+
+    .box h4,
+    .box h4 span{
+        font-size: 5rem;
+    }
+
+    .kepesseg-container{
+        display: grid;
+        grid-template-areas: 
+        "doboz doboz1 doboz2"
+        ;
+    }
+
+    .container{
+        justify-content: space-evenly;
+        align-items: center;
+        display: grid;
+        grid-template-areas:
+        "card card1 card2 card3 card4"
+        ;
+    }
 }
