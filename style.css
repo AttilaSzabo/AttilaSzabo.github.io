@@ -34,7 +34,7 @@ body{
 
 .portfolio span{
     font-size: 2rem;
-    color: red;
+    color: chocolate;
     font-weight: 800;
 }
 
@@ -161,7 +161,7 @@ opacity: 0;
 
 .box h4 span{
     font-size: 2.4rem;
-    color: red;
+    color: chocolate;
 }
 
 .cv{
@@ -235,7 +235,7 @@ opacity: 0;
     margin: 25px auto auto auto;
     width: 280px;
     color: rgba(255,255,255,.7);
-    font-weight: 700;
+    font-weight: 500;
     text-shadow: 1px 1px 2px black;
 }
 
