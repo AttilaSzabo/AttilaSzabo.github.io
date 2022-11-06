@@ -420,7 +420,7 @@ body {
 .kozelgo_image {
     box-shadow: inset 0 0 15px rgb(191, 171, 171);
     border-radius: 10px 10px 0 0;
-    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(./images/kerdojel.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2)), url(./images/hatter.jpg);
 }
 
 .box_text h5{
